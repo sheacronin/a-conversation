@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>a conversation.</title>
+	<link rel="stylesheet" type="text/css" href="c/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="weather"></div>
+
+<h1>a conversation.</h1>
+
+<!-- Entering name -->
+<div id="intro">
+	<p>hey, welcome. what is your name?</p>
+
+	<input type="text" id="name" name="name" autocomplete="off">
+	<button id="nameButton" onclick="getName()">enter</button>
+</div>
+
+<p id="greeting"></p>
+
+<!-- Choosing a direction -->
+<div id="directionQ">
+	<p>do you want to go right or left?</p>
+	<button id="left" onclick="go(left)">
+		⇦
+	</button>
+	<button id="right" onclick="go(right)">
+		⇨
+	</button>
+</div>
+
+<p id="dirResult"></p>
+
+<!-- Choosing a season -->
+<div id="seasonQ">
+	<p>what's your favorite season?</p>
+	<button class="seasonButton" id="spring" onclick="changeSeason('spring')">spring</button>
+	<button class="seasonButton" id="summer" onclick="changeSeason('summer')">summer</button>
+	<button class="seasonButton" id="autumn" onclick="changeSeason('autumn')">autumn</button>
+	<button class="seasonButton" id="winter" onclick="changeSeason('winter')">winter</button>
+</div>
+
+<!-- Choosing a fave color -->
+<div id="colorQ">
+	<p>finally, what is your favorite color?</p>
+	<input type="color" name="faveColor" id="faveColor">
+	<p>
+		<label for="faveColor">pick your favorite!</label>
+		<button id="colorButton" onclick="submitColor()">submit</button>
+	</p>
+</div>
+
+<p id="goodbye"></p>
+
+<script type="text/javascript" src="j/gamescript.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

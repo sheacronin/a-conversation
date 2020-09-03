@@ -1,0 +1,68 @@
+body {
+	text-align: center;
+	background-color: ghostwhite;
+	font-size: 20px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 60px;
+	margin: 20px;
+}
+
+button {
+	background-color: gainsboro;
+	border-radius: 5px;
+	border: 0;
+	font-size: 20px;
+	font-family: 'Work Sans', sans-serif;
+	height: 30px;
+}
+
+#weather {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter: blur(1px);
+}
+
+#name {
+	border: 0;
+	border-radius: 5px;
+	background-color: darkgrey;
+	color: white;
+	font-size: 20px;
+	font-family: 'Work Sans', sans-serif;
+	text-align: center;
+	height: 30px;
+}
+
+#directionQ {
+	display: none;
+}
+
+#seasonQ {
+	display: none;
+}
+
+#colorQ {
+	display: none;
+}
+
+#faveColor {
+	height: 50px;
+	width: 50px;
+	padding: 3px;
+	background-color: ghostwhite;
+	border: none;
+	border-radius: 10px;
+}
+
+em {
+	font-size: 24px;
+	font-weight: bold;
+}
